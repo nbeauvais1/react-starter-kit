@@ -1,0 +1,26 @@
+%buttonBase {
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem 2rem;
+    box-shadow: 2px 2px 4px 0 rgba(102, 10, 10, 0.568);
+    color:grey;
+    border-radius: 3px;
+    margin: 1rem;
+    font-size:1rem;
+}
+
+.default {
+    @extend %buttonBase;
+}
+
+.warning {
+    @extend %buttonBase;
+    background-color: orangered;
+    color: #fff;
+}
+
+.info {
+    @extend %buttonBase;
+    background-color: cornflowerblue;
+    color: #fff;
+}
