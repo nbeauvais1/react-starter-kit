@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// **** Components must start from a single node (element)
+// <></> -> React fragment, an empty html tag that can be used as your single node
+
+import Button from './components/button/Button'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header>
+      <h1>React Starter Kit</h1>
+      <Button title="default" type="default"/>
+      <Button title="warning" type="smallWarning"/>
+      <Button title="danger" type="danger"/>
+      <Button title="hiphop"type="hiphop"/>
+    </header>
   );
 }
 
